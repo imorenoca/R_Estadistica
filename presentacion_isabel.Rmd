@@ -1,0 +1,51 @@
+---
+title: "Presentación- R0"
+author: "Isabel Moreno"
+date: "2024-09-30"
+output: html_document
+---
+
+Mi nombre es Isabel, estoy matriculada en esta asignatura como parte del Curso preparatorio al máster de Ciencias de Datos.
+
+Estudié Psicología y recientemente he finalizado el Técnico Superior de Desarrollo de Aplicaciones Web. La Estadística la he utilizado en Psicología para comprobar hipótesis en resultados de tratamientos y en la estandarización de tests y pruebas. 
+
+Realicé las prácticas de Desarrollo de Aplicaciones Web como analista de datos, y me gustó tanto que me he matriculado en el máster y en esta asignatura.
+
+Suma
+
+``` {r echo=TRUE}
+suma <- 25+19
+print(suma)
+
+```
+
+Resta
+
+``` {r echo=TRUE}
+resta <- 25-19
+print(resta)
+```
+
+Representación gráfica
+
+[Información sobre la función](https://r-charts.com/es/distribucion/funcion-boxplot/)
+
+```{r echo=TRUE}
+datos <- c(2, 2, 4, 4, 5, 5, 6, 6, 7, 8, 9, 50)
+
+boxplot(datos, 
+  main = "Representación de la distribución", 
+  ylab = "Valores", 
+  col = "purple",
+  #Representación valor atípico
+  outlty = 0,  # Tipo de línea
+  outlwd = 1,  # Ancho de línea
+  outpch = 23, # Símbolo pch para los atípicos
+  outcex = 2,  # Tamaño de los atípicos
+  outcol = 1,  # Color
+  outbg = 4)   # Color de fondo (pch 21 a 25)
+```
+
+
+
+
